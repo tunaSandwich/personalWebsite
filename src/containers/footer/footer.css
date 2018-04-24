@@ -1,0 +1,25 @@
+/*Monitor*/
+@media all and (min-width: 1280px) {
+
+}
+
+/*Macbook*/
+@media all and (max-width: 1279px) and (min-width: 768px) {
+
+}
+
+/*phone*/
+@media all and (max-width: 767px) and (min-width: 1px) {
+
+}
+
+.icons{
+  float: right;
+  margin-top: 15px;
+  display: inline-block;
+}
+.icons img{
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}

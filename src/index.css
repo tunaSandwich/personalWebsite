@@ -1,0 +1,290 @@
+/*blackish rgb(38, 38, 38)*/
+/*blood-orange rgba(230, 48, 0, 0.74)*/
+/*white cream rgba(245, 243, 239, 0.8)*/
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  background: black;
+}
+#background{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  /*background-image: url('./images/projectsBackground.jpg');*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/*Monitor*/
+@media all and (min-width: 1280px) {
+
+  .pdfContainer{
+    max-height: 475px;
+    overflow: scroll;
+    color: rgba(245, 243, 239, 0.8);
+  }
+  .pdfContainer canvas{
+    margin-top: 25px;
+  }
+  .footerContainer{
+    background-color: black;
+    max-width: 90%;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+}
+/*Macbook*/
+@media all and (max-width: 1279px) and (min-width: 768px) {
+
+  .pdfContainer{
+    max-height: 475px;
+    overflow: scroll;
+    color: rgba(245, 243, 239, 0.8);
+  }
+  .footerContainer{
+    background-color: black;
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+
+}
+
+/*phone*/
+@media all and (max-width: 767px) and (min-width: 1px) {
+
+/* Todo AddIcons to mobile view*/
+  .pdfContainer{
+    max-height: 475px;
+    overflow: scroll;
+    color: rgba(245, 243, 239, 0.8);
+    top: 25px;
+  }
+  .footerContainer{
+    background-color: black;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+
+}
+
+/*-----------------------------------------------------------*/
+.backgroundLucas{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  /*background-image: url('./images/projectsBackground.jpg');*/
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+nav {
+  background: black !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.navPushFromTop{
+  margin-top: 25px !important;
+}
+.navigate a{
+  font-size: 15px !important;
+  color: rgba(245, 243, 239, 0.9);;
+  padding: 0 !important;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.navigate li:hover{
+  background-color: black;
+}
+.alignBtn{
+  display: inline-block;
+}
+.detailHeader{
+  float: left;
+}
+.borderless{
+  margin-top: 25px;
+}
+.borderless td, .borderless th {
+    border: none !important;
+    text-align: center;
+}
+table{
+  width: 500px !important;
+  margin: 0 auto;
+
+}
+.centerText{
+  text-align: center;
+  top: -25px;
+}
+.imgMed{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.thumbImg{
+  width: 150px;
+  height: 150px;
+}
+.backgroundLucas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* background: url('./images/backgroundLucas.jpeg'); */
+  width: 100%;
+  height: 100%;
+}
+.messages{
+  width: 100%;
+  height: 250px;
+}
+.test{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+.tableImg{
+  width: 50px;
+  height: 50px;
+  display: inline;
+}
+.alignBtn{
+  align: center;
+}
+.chatContainer{
+  position: absolute;
+  width: 300px;
+  bottom: 100px;
+  right: 25px;
+  float: right;
+  height: 350px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 9px 28px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 9px 28px -7px rgba(0,0,0,0.75);
+  box-shadow: 7px 9px 28px -7px rgba(0,0,0,0.75);
+  display: none;
+}
+.show{
+    display: block !important;
+}
+.close{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: rgba(230, 48, 0, 0.74);
+}
+#messages{
+  height: 315px;
+}
+.profIcon{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.alignContactInfo{
+  text-align: center;
+  color: rgba(230, 48, 0, 0.74);
+
+}
+.alignContactInfo h5{
+  display: inline;
+  font-size: 15px;
+}
+
+.alignContactInfo h6{
+  display: inline;
+}
+hr{
+  width: 50%;
+  border: 10px solid rgba(230, 48, 0, 0.74);
+  background-color:#CCC;
+}
+.marginup{
+  margin-top: 5px;
+}
+.margincontact{
+  margin-top: 45px;
+}
+.selected a{
+  color: white !important;
+}
+li a:hover, li a:focus {
+   /*color: white !important;*/
+   background-color: black !important;
+}
+.redLine{
+  border: 1px solid rgba(230, 48, 0, 0.74);
+  margin-bottom: 15px;
+  width: 250px;
+}
+.projectLink{
+  color: white;
+}
+.SimplePDF {
+  width: 350px;
+  height: 500px;
+  border: 1px dashed red;
+  margin: 15px;
+  padding: 15px;
+  float: left;
+  margin-top: 25px;
+}
+#messages li{
+  background-color: rgba(230, 48, 0, 0.74);
+  color: black;
+  list-style-type: none;
+  float: left;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0px;
+  padding: 0px;
+}
+.alignToCenter{
+  text-align: center;
+}
+.lucasHeader{
+  font-size: 40px;
+  color: whitesmoke;
+}
+.project{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.aboutDescription{
+  color: rgba(245, 243, 239, 0.8);
+}
+.aboutDescription p{
+  margin: 0 auto;
+  line-height: 17.5px;
+  width: 300px;
+}
+
+.professionalIcons{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.projectTitle{
+  color: white;
+}
+.centerNavDropdown{
+  right: 45%;
+  border: none;
+}
+.email{
+  margin-top: 15px;
+  float: left;
+  font-size: 12px;
+  color: lightgrey;
+}
+.mediaDescription{
+  color: rgb(166, 162, 161);
+}
+.projectStack{
+  color: lightgrey;
+}

@@ -1,0 +1,23 @@
+/*Monitor*/
+@media all and (min-width: 1280px) {
+
+}
+
+/*Macbook*/
+@media all and (max-width: 1279px) and (min-width: 768px) {
+
+}
+
+/*phone*/
+@media all and (max-width: 767px) and (min-width: 1px) {
+
+}
+.testing li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.testing li a{
+    text-decoration: none;
+    color: rgba(245, 243, 239, 0.8);
+}

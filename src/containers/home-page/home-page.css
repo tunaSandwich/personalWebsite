@@ -1,0 +1,65 @@
+/*Monitor*/
+@media all and (min-width: 1280px) {
+  .homepageImg{
+    position: absolute;
+    height: 498px;
+    width: 1200px;
+    background-image: url('../../images/homePageLucas.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/*Macbook*/
+@media all and (max-width: 1279px) and (min-width: 768px) {
+  .homepageImg{
+    position: absolute;
+    height: 498px;
+    width: 1200px;
+    background-image: url('../../images/homePageLucas.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+/*small screens*/
+@media all and (max-width: 1200px){
+  .homepageImg{
+    position: absolute;
+    background-image: url('../../images/lucasGarzaImg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+
+  }
+
+}
+
+/*phone*/
+@media all and (max-width: 767px) and (min-width: 1px) {
+  .homepageImg:before{
+  color: lightgrey;
+  font-size: 15px;
+  font: Sans-serif;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.homepageImg{
+  margin-top: 100px;
+  text-align: center;
+}
+
+}
