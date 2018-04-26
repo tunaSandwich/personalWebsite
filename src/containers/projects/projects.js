@@ -6,7 +6,6 @@ import './projects.css';
 
 class Projects extends Component {
   renderProjects(project){
-    console.log(project.id);
     return (
       // Render each project
       <div id={project.id} key={project.title} className='project'>

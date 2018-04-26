@@ -4,7 +4,7 @@ export default function(){
       title: 'Lucas Garza',
       backgroundImg: '../../style/images/backgroundLucas.jpg',
       occupation: 'DEVELOPER',
-      github: {title: 'Github', imgLink: 'src/images/stackSymbols/githubIcon.png', link: 'https://github.com/tunaSandwich'},
+      github: {title: 'Github', imgLink: './images/githubIcon.jpg', link: 'https://github.com/tunaSandwich'},
       linkedin: {title: 'LinkedIn', imgLink: './images/stackSymbols/linkedIcon.png', link: 'https://linkedin.com/in/lucasgonzalezgarza'},
       phone: '(626) 807-5538',
       email: 'gonzalezgarza.lucas@gmail.com',
