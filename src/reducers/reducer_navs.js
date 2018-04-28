@@ -15,6 +15,12 @@ export default function(){
       title: 'Projects',
       project: [
         {
+          title: 'Butthead 3D Model',
+          projectStack: 'threejs, Maya, Z Brush',
+          description: "I took an intro course to 3D Modeling at Art Center just for fun. Decided to make a 3D rendering of Butthead. Unfortunately, I saved butthead's material (skin and textues) as a .mat, which is not compatible with three.js. So, here is a bare obj of butthead spinning in space... ",
+          id: 'butthead'
+        },
+        {
           title: 'My Map App',
           projectStack: 'Javascript, Node, Express, MongoDB. Mongoose, MongoLab, EJS, Heroku, Bootstrap',
           description: 'I am the sole developer on this project. Users build up their personal map with all the cities and destinations that they have visited. They can then follow other users’ maps to compare each other’s destinations. I used an authentication middleware for Node called Passport.js. This project is far from finished, and I will continue to add features to this project. You can visit the app at: ',
@@ -30,20 +36,8 @@ export default function(){
           imgLink: '../../style/images/lucasGarzaImg.jpg',
           id: 'lucas'
         },
-        {
-          title: 'Butthead 3D Model',
-          projectStack: 'Maya, Z Brush, threejs',
-          description: 'I took an intro course to 3D Modeling at Art Center just for fun. Decided to make a 3D rendering of Butthead. ',
-          id: 'butthead'
-        },
       ],
       id: 'Projects'
-    },
-    {
-      title: 'Resume',
-      file: '../../style/lucasResume.pdf',
-      page: 1,
-      id: 'Resume'
     }
   ]
 }

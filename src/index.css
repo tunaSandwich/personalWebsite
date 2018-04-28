@@ -213,6 +213,7 @@ hr{
 }
 .selected a{
   color: white !important;
+  text-decoration: underline !important;
 }
 li a:hover, li a:focus {
    /*color: white !important;*/

@@ -13,10 +13,14 @@
 
 }
 .modelContainer{
-  height: 500px;
-  width: 500px;
-}
-.modelContainer canvas {
+  width: auto;
+   height: 100px;
+   width: 100px;
+   margin-bottom: 42px;
+   display: inline-block;
+   vertical-align: middle;
+ }
+.modelContainer canvas{
   width: 100%;
-  height: 100%
-}
+  height: 100%;
+ }

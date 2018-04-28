@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {bindActionCreators} from "redux";
 import Butthead from '../../data/butthead.obj';
+import Texture from '../../images/objectTexture.jpg';
 import './butthead-model.css';
 var THREE                   = require('three');
 var OBJLoader               = require('three-obj-loader')(THREE);
-// var OrbitControls           = require('three-orbit-controls')(THREE);
+var OrbitControls           = require('three-orbit-controls')(THREE);
 
 class ButtheadModel extends Component {
   constructor(props) {
@@ -20,37 +21,44 @@ class ButtheadModel extends Component {
 
     render() {
       return (
-        <div>
-        {/*  {(this.state.modelLoading) ? (
-            <div className="loadingModel">
-              <h3>{this.state.percentComplete} %</h3>
-              <img src={spinnerGif} alt="loading..." />
-            </div>
-          ) : (
-            <div></div>
-          )
-        }*/}
+        <div className="modelContainer">
           <div id="ModelContainer"
             className="modelContainer">
           </div>
-          <h2>BUTTHEAD</h2>
         </div>
       );
     }
 
   init(){
+    var Modelcontainer = document.getElementById('ModelContainer');
+
+    var viewportOffset = Modelcontainer.getBoundingClientRect();
+    // these are relative to the viewport, i.e. the window
+    var viewportTop = viewportOffset.top;
+    var viewportLeft = viewportOffset.left;
+    var renderer = new THREE.WebGLRenderer( { alpha: true } );
+    // this.renderer.setClearColor( 0x000000, 0 );
+    console.log(Modelcontainer);
+    renderer.setSize( Modelcontainer.clientWidth, Modelcontainer.clientHeight );
+
+    Modelcontainer.appendChild( renderer.domElement );
+
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+    var ambientLight = new THREE.AmbientLight(0xffa393);
+    scene.add(ambientLight);
 
-    var renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
+    var camera = new THREE.PerspectiveCamera( 50, Modelcontainer.clientWidth/Modelcontainer.clientHeight, 0.1, 1000 );
+    camera.position.z = 8;
+    camera.lookAt( scene.position );
 
-    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    var ambientLight = new THREE.AmbientLight(0xfffff3);
-    scene.add(ambientLight,);
+    var controls = new OrbitControls( camera, renderer.domElement );
+    controls.target.set( 12000, -4000, 20 ); // sets initial orbit center
 
-    camera.position.z = 5;
+    var texture = new THREE.TextureLoader().load( Texture );
+    texture.wrapS = THREE.RepeatWrapping;
+    texture.wrapT = THREE.RepeatWrapping;
+    texture.repeat.set( 4, 4 );
+
     var buttheadObj;
 
     var manager = new THREE.LoadingManager();
@@ -62,7 +70,9 @@ class ButtheadModel extends Component {
       // ========================== Obj File ===============================
       objLoader.load( Butthead, ( object ) => {
         buttheadObj = object;
-        scene.add(  object  );
+
+        scene.add( buttheadObj )
+
         this.setState({
           modelLoading: false
         });
@@ -83,7 +93,6 @@ class ButtheadModel extends Component {
     var animate = function () {
       requestAnimationFrame( animate );
       if (buttheadObj) {
-        buttheadObj.rotation.x += 0.01;
         buttheadObj.rotation.y += 0.01;
 
       }

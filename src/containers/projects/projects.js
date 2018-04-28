@@ -15,9 +15,9 @@ class Projects extends Component {
         <div className="media-body mediaDescription">
             <h4 className="media-heading">
             <a className='projectTitle' href={project.link} >{project.title}</a></h4>
+            {project.id === 'butthead' ? <ButtheadModel /> : ""}
             <h5 className='projectStack'>[{project.projectStack} ]</h5>
             <p> {project.description} <a href={project.link} className='projectLink'>{project.link}</a> </p>
-            {project.id === 'butthead' ? <ButtheadModel /> : ""}
           </div>
         </div>
       </div>
