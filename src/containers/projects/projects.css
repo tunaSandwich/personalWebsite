@@ -10,6 +10,12 @@
     display: inline-block;
         float: left;
   }
+  .buttheadContainer{
+      display: inline-block;
+      width: 8%;
+      vertical-align:top;
+  }
+
 
 }
 
@@ -26,6 +32,12 @@
 display: inline-block;
     float: left;
   }
+  .buttheadContainer{
+      display: inline-block;
+      width: 8%;
+      vertical-align:top;
+  }
+
 
 }
 
@@ -41,13 +53,12 @@ display: inline-block;
     color: lightgrey;
         float: left;
   }
+  .buttheadContainer{
+      display:block;
+
+  }
 
 }
 .media-heading{
   display: inline-block;
-}
-.buttheadContainer{
-    display: inline-block;
-    width: 8%;
-    vertical-align:top;
 }
