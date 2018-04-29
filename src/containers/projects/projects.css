@@ -5,9 +5,10 @@
     border-radius: 1px;
     margin-top: 30px;
     max-height: 80vh;
-    max-width: 900px;
-    margin: 0 auto;
+    width: 80%;
     color: lightgrey;
+    display: inline-block;
+        float: left;
   }
 
 }
@@ -19,10 +20,11 @@
     border-radius: 1px;
     margin-top: 30px;
     max-height: 80vh;
-    max-width: 900px;
+    width: 75%;
     margin: 0 auto;
     color: lightgrey;
-
+display: inline-block;
+    float: left;
   }
 
 }
@@ -34,12 +36,18 @@
     border-radius: 1px;
     margin-top: 30px;
     max-height: 500px;
-    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     color: lightgrey;
+        float: left;
   }
 
 }
 .media-heading{
   display: inline-block;
+}
+.buttheadContainer{
+    display: inline-block;
+    width: 8%;
+    vertical-align:top;
 }

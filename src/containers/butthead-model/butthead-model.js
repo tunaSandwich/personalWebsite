@@ -94,6 +94,7 @@ class ButtheadModel extends Component {
       requestAnimationFrame( animate );
       if (buttheadObj) {
         buttheadObj.rotation.y += 0.01;
+        buttheadObj.rotation.x += 0.01;
 
       }
 

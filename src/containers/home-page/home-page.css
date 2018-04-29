@@ -50,17 +50,16 @@
 
 /*phone*/
 @media all and (max-width: 767px) and (min-width: 1px) {
-  .homepageImg:before{
-  color: lightgrey;
-  font-size: 15px;
-  font: Sans-serif;
-  text-transform: uppercase;
-  margin-top: 50px;
-}
 .homepageImg{
-  margin-top: 100px;
-  text-align: center;
-  
+  position: absolute;
+  background-image: url('../../images/lucasGarzaImg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
 }
 
 }
